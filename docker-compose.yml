@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  db:
+    image: 8alfalfa8/postgres:latest
+    container_name: postgres17
+    networks:
+      odoo_network:
+        aliases:
+          - db
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_DB=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  odoo:
+    image: 8alfalfa8/odoo:latest
+    container_name: odoo18
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      odoo_network:
+        aliases:
+          - odoo
+    environment:
+      - ODOO_DB_HOST=db
+      - ODOO_DB_USER=odoo
+      - ODOO_DB_PASSWORD=odoo
+      - ODOO_ADMIN_PASSWORD=admin
+      - ODOO_DEMO=True
+      - ODOO_LOAD_LANGUAGE=ja_JP
+    volumes:
+      - odoo_data:/var/lib/odoo
+      - odoo_extra_addons:/mnt/extra-addons
+    ports:
+      - "8069:8069"
+      - "8072:8072"
+    restart: unless-stopped
+
+networks:
+  odoo_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  odoo_data:
+  odoo_extra_addons:
