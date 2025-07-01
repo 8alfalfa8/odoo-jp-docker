@@ -35,7 +35,7 @@ Odoo上で業務フローを実際に操作しながら学習できるため、*
 ```
 odoo-jp-docker
 ├─ docker-compose.yml                  ← Docker配置ファイル
-├─ all_menu.png                        ← 全メニュー画面
+├─ all_menu.png                        ← 全メニュー画像ファイル
 ├─ LICENSE                             ← ライセンス
 └─ README                              ← 説明
 ```
