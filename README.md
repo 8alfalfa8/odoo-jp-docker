@@ -79,10 +79,10 @@ http://localhost:8069/
 | 項目              | 値                 |
 | --------------- | ----------------- |
 | Master Password | `admin`（必須固定値）       |
-| Database Name   | `odoo`（任意値）        |
-| Email           | `aaa@bbb.com`（任意値、ログインIDのため、メモを取ってください） |
-| Password        | `odoo`（任意値、ログインPWのため、メモを取ってください）        |
-| Phone Number    | `00000000`（任意値）    |
+| Database Name   | `odoo`（必須任意値）        |
+| Email           | `aaa@bbb.com`（必須任意値、ログインIDのため、メモを取ってください） |
+| Password        | `odoo`（必須任意値、ログインPWのため、メモを取ってください）        |
+| Phone Number    | `00000000`（必須任意値）    |
 | Language        | `Japanese / 日本語`  |
 | Country         | `Japan`           |
 | Demo Data       | ✅ チェックを入れる        |
