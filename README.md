@@ -1,7 +1,36 @@
 
 # 🇯🇵 Odoo 日本語対応 Docker 環境（基盤システム向け）
 
-このリポジトリは、**企業の基盤システム（ERP）向けのオープンソース「Odoo」の日本語対応Docker環境**を提供しています。
+---
+
+## 閲覧準備：Markdown Viewer のインストール
+
+本リポジトリのドキュメント（Markdown記法）をブラウザで正しく閲覧し、図解（Mermaid）を表示させるために、ブラウザ拡張機能 **「Markdown Viewer」** のインストールと設定を推奨しています。
+
+### 1. インストール
+お使いのブラウザに合わせて、以下のリンクからインストールしてください。
+
+* **Chrome / Edge**: [Markdown Viewer (Chrome Web Store)](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcedbflnpeebnljnphakjden)
+* **Firefox**: [Markdown Viewer (Firefox Add-ons)](https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer/)
+
+### 2. ローカルファイルへのアクセス許可（必須）
+PC上のファイルをブラウザで開くために、以下の設定を行ってください。
+
+1. ブラウザの拡張機能アイコン（パズルマーク）から **[Markdown Viewer]** > **[詳細]**（または拡張機能の管理）を開きます。
+2. **「ファイルの URL へのアクセスを許可する」** を **ON** にします。
+
+### 3. Mermaid（図解）の有効化
+ドキュメント内のチャートを表示するために必要です。
+
+1. Markdown Viewer のオプション（⚙アイコン）を開きます。
+2. 左メニューの **[Compiler]** を選択します。
+3. **[Mermaid]** の項目にチェックを入れます。
+
+設定完了後、この `README.md` ファイルをブラウザにドラッグ＆ドロップすることで、整形されたレイアウトで閲覧可能になります。
+
+---
+
+本リポジトリは、**企業の基盤システム（ERP）向けのオープンソース「Odoo」の日本語対応Docker環境**を提供しています。  
 ローカル環境において、**簡単に日本語対応のOdooを立ち上げることが可能**です。
 
 Odoo（旧OpenERP）は販売（CRMを含む）機能に加えて、**会計、在庫管理、製造、人事、eコマース**など、企業の基幹業務を支える多様な機能を備えており、
