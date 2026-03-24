@@ -121,3 +121,13 @@ https://colorful-inc.jp/
 
 本リポジトリは [LGPLv3 ライセンス](./LICENSE) のもとで公開されています。
 
+
+<!-- START_TREE -->
+## プロジェクト構成  
+├── [LICENSE](LICENSE)  
+├── [README.md](README.md)  
+├── [all_menu.png](all_menu.png)  
+└── [docker-compose.yml](docker-compose.yml)  
+
+0 directories, 4 files  
+<!-- END_TREE -->
